@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator</title>
+    <script type="text/javascript" nonce="0d1df2fee737479a8fd75634522" src="//local.adguard.org?ts=1731572045441&amp;type=content-script&amp;dmn=colorpalette.hu&amp;url=http%3A%2F%2Fcolorpalette.hu%2F&amp;app=com.apple.Safari&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+<script type="text/javascript" nonce="0d1df2fee737479a8fd75634522" src="//local.adguard.org?ts=1731572045441&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="headLine">Color Palette Generator<br><span id="colorSing" style="color: #6891d4;">PUSH TO
+                GENERATE!</span></h1>
+                <div id="colorwheel-wrapper">
+                    <div id="rainbow"></div>
+                    <div id="wrapper">
+                        <div id="random-red" class="color"></div>
+                        <div id="random-purple" class="color"></div>
+                        <div id="random-blue" class="color"></div>
+                        <div id="random-green" class="color"></div>
+                        <div id="random-yellow" class="color"></div>
+                        <div id="random-orange" class="color"></div>
+                    </div>
+                </div>
+        <div id="back"><</div>
+            <div id="forward">></div>
+            <div id="btn-generate" class="btn">Get random color</div>
+            <div id="btn-save" class="btn">Save current color</div>
+            <div id="saved-color-wrapper">
+                <div id="custom-color">
+                    <div id="plus">+</div>
+                    <div id="input-box">
+                        <p>Type your code:</p>
+                        <input type="text" id="input-field" maxlength="7" pattern="^#([A-Fa-f0-9]{6})$"></input>
+                    </div>
+                </div>
+            </div>
+            <div id="btn-export" class="btn">Get my palette</div>
+            <a id="reset" target="_self" href="index.html">new palette></a>
+
+
+        <script src="js/javaScript.js"></script>
+        <script src="js/rainbowColors.js"></script>
+        <script src="js/generateColor.js"></script>
+        <script src="js/createDiv.js"></script>
+        <script src="js/ExportPalette.js"></script>
+        <script src="js/addCustomColor.js"></script>
+</body>
+
+</html>
